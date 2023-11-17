@@ -1,0 +1,96 @@
+body{
+
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 200px;
+  color: lawngreen;
+  border: 3px solid lawngreen;
+  width: 250px;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px green, 0 0 30px lawngreen, 0 0 40px lawngreen, 0 0 50px lawngreen inset;
+  animation: box-glow 3s ease-in-out infinite alternate;
+
+}
+
+.box span{
+
+  padding: 0;
+  margin: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+    
+}
+
+.inner-box{
+
+    display: flex;
+    border: 2px solid lawngreen;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 20px;
+    
+}
+
+.inner-box span:nth-child(1){
+  animation-delay: 0.5s
+}
+
+.inner-box span:nth-child(2){
+  animation-delay: 1s
+}
+
+.inner-box span:nth-child(4){
+  animation-delay: 1.5s
+}
+
+.inner-box span:nth-child(7){
+  animation-delay: 1.5s
+}
+  
+
+.glow {
+
+    font-size: 40px;
+    color:lawngreen;
+    text-align: center;
+
+    
+}
+
+.glow-animation{
+
+  color:lawngreen;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes glow {
+    
+  from { color: lawngreen; }
+  to { color: green }
+}
+
+@keyframes box-glow{
+  
+  from{ box-shadow: 0 0 20px green, 0 0 30px lawngreen, 0 0 40px lawngreen, 0 0 50px lawngreen inset; }
+  to{ box-shadow: 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green inset; }
+
+}

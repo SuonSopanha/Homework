@@ -1,0 +1,70 @@
+body{
+    background-color: red;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 10px;
+    animation: bouncing 4s linear infinite;
+
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-120px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+
+ul li:nth-child(1){
+    animation-delay: 0.5s;
+    
+}
+
+ul li:nth-child(2){
+    animation-delay: 1s;
+    
+}
+
+ul li:nth-child(3){
+    animation-delay: 1.5s;
+    
+}
+
+ul li:nth-child(4){
+    animation-delay: 2s;
+    
+}
+
+ul li:nth-child(5){
+    animation-delay: 2.5s;
+}
